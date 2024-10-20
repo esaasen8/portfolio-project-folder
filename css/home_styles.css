@@ -109,9 +109,14 @@
   }
   */
 
-  /* 
-  #D5E6F6 
-  #F5F9FF
+  /* Brand Colors
+  Midnight Blue: #41729f
+  Blue Gray: #5885af
+  Dark Blue: #274472
+  Baby Blue: #c3e0e5
+  Light Blue: #D5E6F6
+  Blush: #D36582
+  Salmon: #E4959E
   */
 
   body {
@@ -147,7 +152,7 @@
   }
 
   a {
-    color: #BC2F42;
+    color: #D36582;
     text-decoration: none; /* No underlining */
   }
   a:hover {
@@ -156,26 +161,26 @@
   }
 
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #D36582;
   }
  
   a:active { /* selected link */
-    color: #994c30;
+    color: #D36582;
   }
 
   a:focus { /* using the keyboard to select */
-      color: #cc6540;
+      color: #D36582;
       text-decoration: underline;
   }
 
   .button.filled {
     display: inline-block; 
-    background-color: #E4959E;
+    background-color: #5885af;
     color: #ffffff; 
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #9F2838; 
+    border-bottom: 2px solid #274472; 
     transition: 0.2s opacity;
   }
 
@@ -185,7 +190,7 @@
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #E4959E; 
+    border-bottom: 2px solid #274472; 
     transition: 0.2s opacity;
   }
 
@@ -200,12 +205,12 @@
 
   .button.contact {
     background-color: transparent;
-    color: #BC2F42;
+    color: #274472;
     text-transform: uppercase;
-    border: 2px solid #E4959E;
+    border: 2px solid #41729f;
   }
   
   .button.contact:hover {
-    background-color: #E4959E;
+    background-color: #5885af;
     color: #ffffff;
   }
