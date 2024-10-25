@@ -119,6 +119,10 @@
   Salmon: #E4959E
   */
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -153,11 +157,11 @@
 
   a {
     color: #D36582;
-    text-decoration: none; /* No underlining */
+    text-decoration: none;
   }
   a:hover {
     color: #9F2838;
-    text-decoration: underline; /* Underlining when hovering over a link */
+    text-decoration: underline; 
   }
 
   a:visited { /* visited link */
@@ -165,7 +169,7 @@
   }
  
   a:active { /* selected link */
-    color: #D36582;
+    color: #423629;
   }
 
   a:focus { /* using the keyboard to select */
@@ -195,7 +199,7 @@
   }
 
   .button:active {
-    color: 
+    color: #423629
   }
   
   .button:hover {
@@ -213,4 +217,190 @@
   .button.contact:hover {
     background-color: #5885af;
     color: #ffffff;
+  }
+
+  header {
+    background-color: #41729f;
+    padding: 10px;
+    position: relative;
+  }
+
+  #hero {
+    background-color: #41729f;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* Layout styling */
+
+  
+  .container {
+    padding: 15px
+  }
+
+  .row {
+    margin: 25px 0;
+  }
+
+  #work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+  #hero h1 {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  header {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav{
+    display: inline-block;
+    width: 100%
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #D36582;
+  }
+
+  nav > ul > li > a:visited {
+    color: #D36582;
+  }
+
+  nav > ul > li > a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    color: #9F2838;
+  }
+
+  nav > ul > li > a:active {
+    color: #423629;
+  }
+
+  #hero h1 {
+    margin: 0;
+    padding: 0.67em 0;
+    color: #ffffff;
+  }
+
+  #hero p {
+    margin: 0;
+    padding: 0.67em 0;
+    color: #ffffff;
+  }
+
+  header {
+    /*start ------------*/
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #41729f;  
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+  }
+
+  #about_me {
+    background: #41729f;
+  }
+
+  #about_me {
+    color: #ffffff;
+  }
+
+  #selfie {
+    align-items: center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+  }
+
+  #about_me > h2 {
+    align-items: center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+  }
+
+  #resume {
+    padding-top: 10px; 
+  }
+
+  #about_content {
+    padding-top: 20px;
+  }
+
+  #skills_n_tools h2 {
+    padding-bottom: 10px;
+  }
+
+  header div {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+/* Mid-Fidelity Styles */
+
+#saved_species_mf {
+  display: inline;
+}
+
+#forecast_mf {
+  display: inline;
+}
+
+#homescreen_mf {
+  display: inline;
+}
+
+/* High-Fidelity Styles */
+
+#saved_species_hf {
+  display: inline;
+}
+
+#forecast_hf {
+  display: inline;
+}
+
+#homescreen_hf {
+  display: inline;
+}
+
+/* Final Draft Styles */
+
+  #saved_species_fd {
+    display: inline;
+  }
+
+  #forecast_fd {
+    display: inline;
+  }
+
+  #homescreen_fd {
+    display: inline;
+  }
+
+  #conceptual_design h2 {
+
   }
