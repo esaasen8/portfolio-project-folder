@@ -1,112 +1,25 @@
   /* Poppins Font Classes
 
-  .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
+  .poppins {
+     font-family: "Poppins", sans-serif;
+   }
+
   .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+     font-weight: 700;
+   }
+
+  .poppins-medium {
+     font-weight: 500;
+   }
+
+  .poppins-regular {
+     font-weight: 300;
+   }
+
+  .poppins-italic {
+    font-style:: italic
   }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
+
   */
 
   /* Brand Colors
@@ -121,6 +34,17 @@
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   body {
@@ -129,7 +53,7 @@
     font-style: normal;
     background-color: #D5E6F6;
     font-size: 16px; 
-    line-height: 1.6; 
+    line-height: 1.4; 
     color: #386167;
   }
   
@@ -177,25 +101,25 @@
       text-decoration: underline;
   }
 
-  .button.filled {
-    display: inline-block; 
-    background-color: #5885af;
-    color: #ffffff; 
+  .button {
+    display: inline-block;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #274472; 
+    border-bottom: 2px solid #274472;
     transition: 0.2s opacity;
   }
-
-  .button {
-    display: inline-block; 
-    color: #ffffff; 
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #274472; 
-    transition: 0.2s opacity;
+  
+  .button.filled {
+    background-color: #5885af;
+    color: #ffffff;
+  }
+  
+  .button.contact {
+    background-color: transparent;
+    color: #274472;
+    text-transform: uppercase;
+    border: 2px solid #41729f;
   }
 
   .button:active {
@@ -207,17 +131,10 @@
     text-decoration: none;
   }
 
-  .button.contact {
-    background-color: transparent;
-    color: #274472;
-    text-transform: uppercase;
-    border: 2px solid #41729f;
-  }
-  
-  .button.contact:hover {
-    background-color: #5885af;
-    color: #ffffff;
-  }
+ .button.contact:hover {
+     background-color: #41729f;
+     color: #ffffff;
+   }
 
   header {
     background-color: #41729f;
@@ -359,7 +276,7 @@
     margin-left: 10px;
   }
 
-/* Mid-Fidelity Styles */
+/* Mid-Fidelity Styles (start) */
 
 #saved_species_mf {
   display: inline;
@@ -373,7 +290,8 @@
   display: inline;
 }
 
-/* High-Fidelity Styles */
+/* Mid-Fidelity Styles (end) */
+/* High-Fidelity Styles (start) */
 
 #saved_species_hf {
   display: inline;
@@ -387,7 +305,8 @@
   display: inline;
 }
 
-/* Final Draft Styles */
+/* High-Fidelity Styles (end) */
+/* Final Draft Styles (start) */
 
   #saved_species_fd {
     display: inline;
@@ -401,6 +320,14 @@
     display: inline;
   }
 
-  #conceptual_design h2 {
+  /* Final Draft Styles (end) */
 
+  #project_1_header {
+    height: 80px;
+  }
+
+  #back_button {
+    display:inline-block
+    margin-top: 0px;
+    padding-top: 0px;
   }
