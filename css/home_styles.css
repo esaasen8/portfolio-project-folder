@@ -43,10 +43,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  * {
-    box-sizing: border-box;
-  }
-
   body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -82,6 +78,8 @@
   a {
     color: #D36582;
     text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
   a:hover {
     color: #9F2838;
@@ -101,67 +99,69 @@
       text-decoration: underline;
   }
 
-  .button {
+  .button.filled {
     display: inline-block;
+    background-color: #5885af;
+    color: #ffffff;
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #274472;
-    transition: 0.2s opacity;
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
-  
-  .button.filled {
-    background-color: #5885af;
-    color: #ffffff;
-  }
-  
-  .button.contact {
+
+  .button.filled.contact {
     background-color: transparent;
     color: #274472;
     text-transform: uppercase;
     border: 2px solid #41729f;
   }
 
-  .button:active {
+  .button.filled:active {
     color: #423629
   }
   
-  .button:hover {
+  .button.filled:hover {
     opacity: 0.8;
     text-decoration: none;
   }
 
- .button.contact:hover {
+  .button.filled.contact:hover {
      background-color: #41729f;
      color: #ffffff;
    }
 
   header {
     background-color: #41729f;
-    padding: 10px;
-    position: relative;
+    padding: 8px;
   }
 
   #hero {
     background-color: #41729f;
-    padding: 20px 0;
+    padding: 24px 0;
     display: inline-block;
     width: 100%;
   }
 
-  /* Layout styling */
+  /* 
+  ======================
+      Layout styling 
+  ======================
+  */
 
   
   .container {
-    padding: 15px
+    padding: 16px
   }
 
   .row {
-    margin: 25px 0;
+    margin: 24px 0;
   }
 
   #work .row {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #4a4a4a;
   }
 
@@ -171,16 +171,19 @@
 
   .logo {
     max-width: 250px;
+    align-items: center;
   }
 
   header {
     text-align: center;
     padding: 10px 0;
+    position: relative;
   }
 
   nav{
     display: inline-block;
-    width: 100%
+    width: 100%;
+    text-align: center;
   }
 
   nav > ul {
@@ -235,6 +238,26 @@
     -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
   }
 
+  #navbar {
+    padding-top: 8px;
+  }
+
+  #project_button {
+    padding-top: 16px;
+  }
+
+  #b4casting_summary {
+    padding-top: 8px;
+  }
+
+  /* about page content */
+
+  #about-picture {
+    width: 100%;
+  max-width: 100%;
+  height: auto;
+  }
+
   #about_me {
     background: #41729f;
   }
@@ -267,67 +290,386 @@
     padding-top: 20px;
   }
 
+  /* Project Page Content */
+
   #skills_n_tools h2 {
     padding-bottom: 10px;
   }
 
-  header div {
-    text-align: left;
-    margin-left: 10px;
+  #back_button {
+    align-self: left;
+    display:inline-block;
+    margin-top: 0px;
+    margin-left: 24px;
+    padding-top: 6px;
+    height: 50px;
   }
 
-/* Mid-Fidelity Styles (start) */
 
-#saved_species_mf {
-  display: inline;
-}
+  /* Animations */
 
-#forecast_mf {
-  display: inline;
-}
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
 
-#homescreen_mf {
-  display: inline;
-}
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
 
-/* Mid-Fidelity Styles (end) */
-/* High-Fidelity Styles (start) */
+  /* "Conceptualize" pics (start) */
 
-#saved_species_hf {
-  display: inline;
-}
+  #user_journey_pic {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+  }
 
-#forecast_hf {
-  display: inline;
-}
+  #user_flow_pic {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+  }
 
-#homescreen_hf {
-  display: inline;
-}
+  #site_map_pic {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+  }
 
-/* High-Fidelity Styles (end) */
-/* Final Draft Styles (start) */
+  /* "Conceptualize" pics (end) */
+
+  /* Mid-Fidelity Styles (start) */
+
+  #saved_species_mf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  #forecast_mf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  #homescreen_mf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  /* Mid-Fidelity Styles (end) */
+  /* High-Fidelity Styles (start) */
+
+  #saved_species_hf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  #forecast_hf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  #homescreen_hf {
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  /* High-Fidelity Styles (end) */
+  /* Final Draft Styles (start) */
 
   #saved_species_fd {
-    display: inline;
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 
   #forecast_fd {
-    display: inline;
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 
   #homescreen_fd {
-    display: inline;
+    align-items: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 
   /* Final Draft Styles (end) */
 
-  #project_1_header {
-    height: 80px;
+  /* Column Sizing */
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  /* 
+  
+  
+  
+  ==============================
+  Medium devices (640px and larger)
+  ================================= 
+  
+  
+  
+  */
+
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      height: unset;
+      padding: 24px 0 13px;
+    }
+    
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 12px;
+    }
+
+    body {
+      text-size-adjust: 18px;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+   
+    [class*="col-"] {
+      width: 50%; 
+      float: left; 
+    }
+
+    .row:after { 
+      content: ""; 
+      clear: both; 
+      display: table;
+    }
+
+    #relevant_skills {
+      padding-left: 8px;
+    }
+    
+    #tools_i_use {
+      padding-left: 40px;
+    }
+
+  /* Mid-Fidelity Styles (start) */
+
+  #saved_species_mf {
+    width: 25%;
   }
 
-  #back_button {
-    display:inline-block
-    margin-top: 0px;
-    padding-top: 0px;
+  #forecast_mf {
+    width: 25%;
+  }
+
+  #homescreen_mf {
+    width: 25%;
+  }
+
+  /* Mid-Fidelity Styles (end) */
+  /* High-Fidelity Styles (start) */
+
+  #saved_species_hf {
+    width: 25%;
+  }
+
+  #forecast_hf {
+    width: 25%;
+  }
+
+  #homescreen_hf {
+    width: 25%;
+  }
+
+  /* High-Fidelity Styles (end) */
+  /* Final Draft Styles (start) */
+
+  #saved_species_fd {
+    width: 25%;
+  }
+
+  #forecast_fd {
+    width: 25%;
+  }
+
+  #homescreen_fd {
+    width: 25%;
+  }
+
+  /* Final Draft Styles (end) */
+  }
+  
+  /* 
+  
+  
+  
+  ==============================
+  Large devices (1024px or larger)
+  ================================= 
+  
+  
+  
+  */
+
+  @media only screen and (min-width: 1024px) {
+   
+    [class*="col-"] {
+      width: 58.33%; 
+      float: left; 
+    }
+
+    .row:after { 
+      content: ""; 
+      clear: both; 
+      display: table;
+    }
+
+    .container {
+      max-width: 1200px; 
+      margin-left: auto; 
+      margin-right: auto; 
+    }
+}
+
+    /* Mid-Fidelity Styles (start) */
+
+  #saved_species_mf {
+    width: 25%;
+  }
+
+  #forecast_mf {
+    width: 25%;
+  }
+
+  #homescreen_mf {
+    width: 25%;
+  }
+
+  /* Mid-Fidelity Styles (end) */
+  /* High-Fidelity Styles (start) */
+
+  #saved_species_hf {
+    width: 25%;
+  }
+
+  #forecast_hf {
+    width: 25%;
+  }
+
+  #homescreen_hf {
+    width: 25%;
+  }
+
+  /* High-Fidelity Styles (end) */
+  /* Final Draft Styles (start) */
+
+  #saved_species_fd {
+    width: 25%;
+  }
+
+  #forecast_fd {
+    width: 25%;
+  }
+
+  #homescreen_fd {
+    width: 25%;
+  }
+
+  /* Final Draft Styles (end) */
+  
+  /* ==============================
+  X-large devices (1440px or larger)
+  ================================= */
+  @media only screen and (min-width: 1440px) {
+
+
+
+    /* Mid-Fidelity Styles (start) */
+
+  #saved_species_mf {
+    width: 25%;
+  }
+
+  #forecast_mf {
+    width: 25%;
+  }
+
+  #homescreen_mf {
+    width: 25%;
+  }
+
+  /* Mid-Fidelity Styles (end) */
+  /* High-Fidelity Styles (start) */
+
+  #saved_species_hf {
+    width: 25%;
+  }
+
+  #forecast_hf {
+    width: 25%;
+  }
+
+  #homescreen_hf {
+    width: 25%;
+  }
+
+  /* High-Fidelity Styles (end) */
+  /* Final Draft Styles (start) */
+
+  #saved_species_fd {
+    width: 25%;
+  }
+
+  #forecast_fd {
+    width: 25%;
+  }
+
+  #homescreen_fd {
+    width: 25%;
+  }
+
+  /* Final Draft Styles (end) */
   }
