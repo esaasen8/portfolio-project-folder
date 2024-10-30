@@ -12,22 +12,24 @@
     </head>
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar">
+        <section class="container" >
+            <picture>
+                <source media="(max-width: 600px)" srcset="img/png/Name_Title_Logo.png">
+                <source media="(min-width: 601px)" srcset="img/png/Name_Title_Logo.png">
+                <img class="logo" src="img/png/Name_Title_Logo.png" alt="portfolio placeholder image" style="width: 100%; height: auto;">
+            </picture> 
+            <nav class="navbar" id="navbar">
                 <ul class="nav-list">
                     <li><a href="./index.html" aria-label="My Work">Work</a></li>
                     <li><a href="./about.html" aria-label="About Me">About</a></li>
                     <li><a href="./contact.html" aria-label="Contact Me">Contact</a></li>
                 </ul>
-            </nav> 
-        </div>
+            </nav>
+        </section> 
     </header>
     <main>
         <section id="about_me">
             <div class="container">
-                <div>
-                    <h1>About</h1>
-                </div>
                 <div>
                     <picture>
                         <source media="(max-width: 600px)" srcset="img/jpg/sun_glasses_profile.jpg">
@@ -35,14 +37,16 @@
                         <img src="img/jpg/sun_glasses_profile.jpg" alt="Project 1: B4Casting Logo" id="selfie" style="width: 25%; height: auto;">
                     </picture>
                 </div>
+                <div>
+                    <h1>My Story</h1>
+                </div>
             </div>    
         </section>        
         <article id="about_content">
             <div class="container"> 
                 <div>
                     <div>
-                        <section id="skills_n_tools" class="container">
-                            <h2>Skills & Tools</h2>
+                        <section id="my_story" class="container">
                             <div id="intro">
                                 <h4>Introduction</h4><p>Who am I? That is a difficult question to answer. 
                                     For I am changing every moment, but I do hold my core values close. 
@@ -77,30 +81,38 @@
                         </section>
                     </div>
                     <br>
-                    <article>
-                        <h2></h2>
-                        <div>
-                            <section>
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>Technical Skills: UX Research, Wireframing, Prototyping, Usability Testing, UI Design,  HTML, CSS, JS</li>
-                                    <li>Soft Skills: Managerial experience in the trades & on my teams in all sports, good with others, shows initiative, Hard Working, Ambitious, Self Learner</li>
-                                    <li>Certifications: UX/UI Certificate</li>
-                                </ul>
-                            </section>
-                            <br>
-                            <section>
-                                <h3>Tools I Use</h3>
-                                <ul>
-                                    <li>User Interviews & Surveys</li>
-                                    <li>User Personas</li>
-                                    <li>User Journeys & User Flows</li>
-                                    <li>Wireframes & Prototyping</li>
-                                    <li>Usability testing</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Jave Script</li>
-                                </ul> 
+                    <article id="skills_n_tools">
+                        <div class="container">
+                            <h2>Skills & Tools</h2>
+                            <section class="row" id="skills_n_tools_content">
+                                <div>
+                                    <article id="relevant_skills" class="column col-md-6" class="container">
+                                        <h3>Relevant Skills</h3>
+                                        <div>    
+                                            <ul>
+                                                <li>Technical Skills: UX Research, Wireframing, Prototyping, Usability Testing, UI Design,  HTML, CSS, JS</li>
+                                                <li>Soft Skills: Managerial experience in the trades & on my teams in all sports, good with others, shows initiative, Hard Working, Ambitious, Self Learner</li>
+                                                <li>Certifications: UX/UI Certificate</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <br>
+                                    <article id="tools_i_use" class="column col-md-6" class="container">
+                                        <h3>Tools I Use</h3>
+                                        <div>
+                                            <ul>
+                                                <li>User Interviews & Surveys</li>
+                                                <li>User Personas</li>
+                                                <li>User Journeys & User Flows</li>
+                                                <li>Wireframes & Prototyping</li>
+                                                <li>Usability testing</li>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Jave Script</li>
+                                            </ul> 
+                                        </div>
+                                    </article>
+                                </div>
                             </section>
                         </div>
                     </article>
