@@ -1,0 +1,226 @@
+/* Poppins Font Classes */
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.poppins-bold {
+    font-weight: 700;
+}
+
+.poppins-medium {
+    font-weight: 500;
+}
+
+.poppins-regular {
+    font-weight: 300;
+}
+
+.poppins-italic {
+    font-style: italic; /* Fixed syntax */
+}
+
+/* Brand Colors */
+:root {
+    --midnight-blue: #41729f;
+    --blue-gray: #5885af;
+    --dark-blue: #274472;
+    --baby-blue: #c3e0e5;
+    --light-blue: #D5E6F6;
+    --blush: #D36582;
+    --salmon: #E4959E;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: var(--light-blue);
+    font-size: 16px; 
+    line-height: 1.4; 
+    color: #386167;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+a {
+    color: var(--blush);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9F2838;
+    text-decoration: underline; 
+}
+
+a:visited {
+    color: var(--blush);
+}
+
+a:active {
+    color: #423629;
+}
+
+a:focus {
+    color: var(--blush);
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--dark-blue);
+    transition: 0.2s opacity;
+}
+
+.button.filled {
+    background-color: var(--blue-gray);
+    color: #ffffff;
+}
+
+.button.filled.contact {
+    background-color: transparent;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    border: 2px solid var(--midnight-blue);
+}
+
+.button.filled:active {
+    color: #423629;
+}
+
+.button.filled:hover {
+    opacity: 0.8;
+}
+
+.button.filled.contact:hover {
+    background-color: var(--midnight-blue);
+    color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--midnight-blue);
+    padding: 8px;
+    text-align: center;
+    position: relative;
+}
+
+/* Layout Styles */
+.container {
+    padding: 16px;
+}
+
+.row {
+    margin: 24px 0;
+}
+
+#work .row {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+    background-color: var(--midnight-blue);
+    padding: 24px 0;
+    width: 100%;
+}
+
+#hero h1, #hero p {
+    margin: 0;
+    padding: 0.67em 0;
+    color: #ffffff;
+}
+
+#project_button {
+    padding-top: 16px;
+}
+
+/* Flexbox Grid Classes */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Media Queries */
+@media only screen and (min-width: 640px) {
+    header {
+        padding: 24px 0 13px;
+    }
+    
+    nav {
+        float: right;
+        margin-top: 12px;
+    }
+
+    body {
+        font-size: 18px; /* Fixed text size property */
+    }
+
+    [class*="col-"] {
+        width: 50%; 
+        float: left; 
+    }
+    
+    .row:after { 
+        content: ""; 
+        clear: both; 
+        display: table;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    [class*="col-"] {
+        width: 58.33%; 
+    }
+
+    .container {
+        max-width: 1200px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /* Adjustments for x-large devices can go here */
+}
