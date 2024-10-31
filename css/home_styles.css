@@ -290,6 +290,23 @@
     padding-top: 20px;
   }
 
+  #relevant_skills {
+    padding: 16px;
+  }
+
+  #relevant_skills h3 {
+    padding: 4px;
+  }
+
+  #tools_i_use {
+    padding: 16px;
+  }
+
+  #tools_i_use h3 {
+    padding: 4px;
+  }
+
+
   /* Project Page Content */
 
   #skills_n_tools h2 {
@@ -442,6 +459,20 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
+  [class*="col-"] {
+    width: 100%; 
+    float: left; 
+  }
+
+  .row:after { 
+    content: ""; 
+    clear: both; 
+    display: table;
+  }
+
+  .column {
+    padding: 0 16px;
+  }
   /* 
   
   
@@ -455,6 +486,11 @@
   */
 
   @media only screen and (min-width: 640px) {
+
+    .col-md-6 {
+      width: 50%;
+    }
+
     header {
       text-align: unset;
       height: unset;
@@ -475,26 +511,10 @@
       display: block;
     }
 
-   
-    [class*="col-"] {
-      width: 50%; 
-      float: left; 
-    }
-
-    .row:after { 
-      content: ""; 
-      clear: both; 
-      display: table;
-    }
-
     #relevant_skills {
       padding-left: 8px;
     }
     
-    #tools_i_use {
-      padding-left: 40px;
-    }
-
   /* Mid-Fidelity Styles (start) */
 
   #saved_species_mf {
@@ -555,16 +575,13 @@
   */
 
   @media only screen and (min-width: 1024px) {
-   
-    [class*="col-"] {
-      width: 58.33%; 
-      float: left; 
+  
+    .col-md-7 {
+      width: 58.33%;
     }
 
-    .row:after { 
-      content: ""; 
-      clear: both; 
-      display: table;
+    .col-md-5 {
+      width: 41.66%;
     }
 
     .container {
