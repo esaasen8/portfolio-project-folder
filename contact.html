@@ -8,23 +8,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Contact Designer</title>
     </head>
 <body>
     <header>
         <section class="container" >
-            <picture>
-                <source media="(max-width: 600px)" srcset="img/png/Name_Title_Logo.png">
-                <source media="(min-width: 601px)" srcset="img/png/Name_Title_Logo.png">
-                <img class="logo" src="img/png/Name_Title_Logo.png" alt="portfolio placeholder image" style="width: 100%; height: auto;">
-            </picture> 
-            <nav class="navbar" id="navbar">
-                <ul class="nav-list">
-                    <li><a href="./index.html" aria-label="My Work">Work</a></li>
-                    <li><a href="./about.html" aria-label="About Me">About</a></li>
-                    <li><a href="./contact.html" aria-label="Contact Me">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <picture id="portfolio_logo">
+                    <source media="(max-width: 600px)" srcset="img/png/Name_Title_Logo.png">
+                    <source media="(min-width: 601px)" srcset="img/png/Name_Title_Logo.png">
+                    <img class="logo" src="img/png/Name_Title_Logo.png" alt="portfolio placeholder image" style="width: 100%; height: auto;">
+                </picture> 
+                <nav class="nav-menu" class="navtoggle" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="./index.html" aria-label="My Work">Work</a></li>
+                        <li><a href="./about.html" aria-label="About Me">About</a></li>
+                        <li><a href="./contact.html" aria-label="Contact Me" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </section> 
     </header>
     <main>
@@ -70,5 +74,7 @@
             <p>Copyright Erick Saasen 2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
