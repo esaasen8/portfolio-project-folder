@@ -175,24 +175,14 @@
   }
 
   header {
-    text-align: center;
     padding: 10px 0;
     position: relative;
-  }
-
-  nav{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
   }
 
   nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
+    margin: 0;
   }
 
   nav > ul > li > a {
@@ -214,6 +204,41 @@
 
   nav > ul > li > a:active {
     color: #423629;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    padding-right: 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
   }
 
   #hero h1 {
@@ -240,6 +265,10 @@
 
   #navbar {
     padding-top: 8px;
+  }
+
+  #portfolio_logo {
+    max-width: 150px;
   }
 
   #project_button {
@@ -486,6 +515,26 @@
   */
 
   @media only screen and (min-width: 640px) {
+
+    nav > ul {
+      margin: 1em 0;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+      display: none;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+    }
+
+    #portfolio_logo {
+      min-width: 641px;
+    }
 
     .col-md-6 {
       width: 50%;
