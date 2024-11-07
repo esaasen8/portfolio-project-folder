@@ -8,23 +8,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>About Erick Saasen</title>
     </head>
 <body>
     <header>
         <section class="container" >
-            <picture>
-                <source media="(max-width: 600px)" srcset="img/png/Name_Title_Logo.png">
-                <source media="(min-width: 601px)" srcset="img/png/Name_Title_Logo.png">
-                <img class="logo" src="img/png/Name_Title_Logo.png" alt="portfolio placeholder image" style="width: 100%; height: auto;">
-            </picture> 
-            <nav class="navbar" id="navbar">
-                <ul class="nav-list">
-                    <li><a href="./index.html" aria-label="My Work">Work</a></li>
-                    <li><a href="./about.html" aria-label="About Me">About</a></li>
-                    <li><a href="./contact.html" aria-label="Contact Me">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <picture id="portfolio_logo">
+                    <source media="(max-width: 600px)" srcset="img/png/Name_Title_Logo.png">
+                    <source media="(min-width: 601px)" srcset="img/png/Name_Title_Logo.png">
+                    <img class="logo" src="img/png/Name_Title_Logo.png" alt="portfolio placeholder image" style="width: 100%; height: auto;">
+                </picture> 
+                <nav class="nav-menu" class="navtoggle" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="./index.html" aria-label="My Work">Work</a></li>
+                        <li><a href="./about.html" aria-label="About Me">About</a></li>
+                        <li><a href="./contact.html" aria-label="Contact Me" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </section> 
     </header>
     <main>
@@ -125,12 +129,12 @@
                     <p>Let’s Connect! Have questions or ideas? I’d love to hear from you! Reach out to us for opportunities, feedback, or just a friendly chat. Your insights are invaluable to me! To Reach out. Call: <a href=tel:2086598598>+1(208)-659-8598</a>. Prefer sending an email?</p>
                     <br>
                     <div>
-                        <a href="mailto:escastle.designs@gmail.com" aria-label="my email" class="button contact">Email me</a>
+                        <a href="mailto:escastle.designs@gmail.com" aria-label="my email" class="button filled contact">Email me</a>
                     </div>
                 </address>
                 <br>
             </section>
-            <Section aria-label="social media links">
+            <section aria-label="social media links">
                 <a href="LINKEDIN-URL" target="_blank" aria-label="LinkedIn Profile">
                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                     <svg enable-background="new 0 0 50 50" id="Layer_1" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" heigth="50"><path d="M45,1H5C2.8,1,1,2.8,1,5v40c0,2.2,1.8,4,4,4h40c2.2,0,4-1.8,4-4V5C49,2.8,47.2,1,45,1z" fill="#0E76A8"/><g id="in"><path d="M21.3,20.7h5.2v2.6l0,0c0.7-1.4,2.6-2.6,5.2-2.6c5.5,0,6.1,3.1,6.1,7.8V38h-5.2v-8.7   c0-2,0.2-4.3-2.6-4.3c-3.5,0-3.5,2.1-3.5,4.3V38h-5.2L21.3,20.7L21.3,20.7z" fill="#FFFFFF" id="n_1_"/><rect fill="#FFFFFF" height="17.3" id="_x7C__1_" width="5.2" x="12.7" y="20.7"/><circle cx="15.3" cy="15" fill="#FFFFFF" id="_x28____x29__1_" r="3"/></g></svg>
@@ -158,5 +162,7 @@
             <p>Copyright Erick Saasen 2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
