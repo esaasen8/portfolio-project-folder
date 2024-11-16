@@ -53,6 +53,15 @@
     color: #386167;
   }
   
+  main {
+    margin-bottom: 120px;
+  }
+
+  footer {
+    background-color: #41729f;
+    color: #ffffff;
+  }
+
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -75,8 +84,17 @@
     font-weight: 500;
   }
 
+  #get_in_touch {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+
+  #footer_contact {
+    font-size: 12px;
+  }
+
   a {
-    color: #FFBB3D;
+    color: #FF220D;
     text-decoration: none;
     transition-duration: 0.2s;
     transition-property: opacity;
@@ -87,7 +105,7 @@
   }
 
   a:visited { /* visited link */
-    color: #FFBB3D;
+    color: #FF220D;
   }
  
   a:active { /* selected link */
@@ -95,7 +113,7 @@
   }
 
   a:focus { /* using the keyboard to select */
-      color: #FFBB3D;
+      color: #FF220D;
       text-decoration: underline;
   }
 
@@ -122,6 +140,13 @@
     color: #274472;
     text-transform: uppercase;
     border: 2px solid #41729f;
+  }
+
+  .button.filled.hollow.contact {
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #D36582;
   }
 
   .button.filled:active {
@@ -282,6 +307,11 @@
   }
 
   /* footer content */
+
+  #copyright {
+    margin-top: 16px;
+    font-size: 8px;
+  }
 
   #facebook {
     height: 50px;
