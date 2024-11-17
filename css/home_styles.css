@@ -271,6 +271,12 @@
     padding: 0 0 10px;
   }
 
+  #back_button nav a {
+    color: #FFBB3D;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
   #hero h1 {
     margin: 0;
     padding: 0.67em 0;
